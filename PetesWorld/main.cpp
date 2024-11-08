@@ -1,8 +1,8 @@
 // program to find countries in Pete's World
 // date November 2022
 // author Pete Lowe
-// add your name here
-//  or here
+// Sofiia Zemlianska
+//
 // estimated time 120 minutes
 // actual time ??
 // version 1.0
@@ -22,7 +22,7 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 0;
 	}
-	std::cout << "Pick a letter from A to A or Z to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to B or Z to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
@@ -55,6 +55,30 @@ int main()
 			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
 		}
 	}	
+	if (letter == 'b' || letter == 'B') //written by Sofiia
+	{
+		if (region == 1)
+		{
+			std::cout << "Belize, Bermuda, Bolivia, Brazil, Bahamas, Barbados" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "Belarus, Belgium, Bosnia and Herzegovina, Bulgaria" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "Benin, Botswana, Burkina Faso, Burundi" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "Bahrain Arabian Peninsula, Bangladesh, Bhutan, Brunei Darussalam" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "There are no Bs in the rest of the world" << std::endl; //default negative response
+		}
+	}
+	
 	if (letter == 'z' || letter == 'Z') // written by Pete
 	{
 		if (region == 1)
