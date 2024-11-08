@@ -1,7 +1,7 @@
 // program to find countries in Pete's World
 // date November 2022
 // author Pete Lowe
-// add your name here
+// Sofiia Zemlianska
 // Viktoriia Pranichenko
 // estimated time 120 minutes
 // actual time ??
@@ -22,7 +22,7 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 0;
 	}
-	std::cout << "Pick a letter from A to A or Y to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to C or X to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
@@ -56,6 +56,7 @@ int main()
 		}
 	}	
 
+
 	if (letter == 'x' || letter == 'X')  //written by Viktoriia 
 	{
 		if (region == 1)
@@ -78,7 +79,52 @@ int main()
 		{
 			std::cout << "There are no Xs in rest of the world" << std::endl;
 		}
-
+	}
+	if (letter == 'b' || letter == 'B') //written by Sofiia
+	{
+		if (region == 1)
+		{
+			std::cout << "Belize, Bermuda, Bolivia, Brazil, Bahamas, Barbados" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "Belarus, Belgium, Bosnia and Herzegovina, Bulgaria" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "Benin, Botswana, Burkina Faso, Burundi" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "Bahrain Arabian Peninsula, Bangladesh, Bhutan, Brunei Darussalam" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "There are no Bs in the rest of the world" << std::endl; //default negative response
+		}
+	}	
+	if (letter == 'c' || letter == 'C') //written by Sofiia
+	{
+		if (region == 1)
+		{
+			std::cout << "Canada, Cayman Islands, Chile, Colombia, Costa Rica, Cuba" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "Croatia, Czech Republic" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Democratic Republic of the Congo(Kinshasa), Congo, Cote D'ivoire(Ivory Coast)" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "Cambodia, China, Christmas Island, Cocos Islands, Cyprus" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "Cook Islands" << std::endl;
+		}
 	}
 	if (letter == 'y' || letter == 'Y') //written by Viktoriia 
 	{
@@ -103,8 +149,6 @@ int main()
 		{
 			std::cout << "There are no Ys in rest of the world" << std::endl;
 		}
-
-
 	}
 	if (letter == 'z' || letter == 'Z') // written by Pete
 	{
